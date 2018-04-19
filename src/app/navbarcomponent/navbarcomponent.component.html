@@ -1,0 +1,38 @@
+<div>
+  <nav class="navbar navbar-expand-sm menu-nav-bar">
+  <a class="navbar-brand" href="#"><img class="company-icon" src="/assets/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggle-icon">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li (click)="calculateMarkerPosition($event)" class="nav-item active">
+        <a class="menu-link" href="#">Pay With Visa</a>
+      </li>
+      <li (click)="calculateMarkerPosition($event)" class="nav-item">
+        <a class="menu-link" href="#">Partner With Us</a>
+      </li>
+      <li (click)="calculateMarkerPosition($event)" class="nav-item">
+        <a class="menu-link" href="#">Run Your Business</a>
+      </li>
+      <li (click)="calculateMarkerPosition($event)" class="nav-item">
+        <a class="disabled menu-link" href="#">Travel With Us</a>
+      </li>
+            <li (click)="calculateMarkerPosition($event)" class="nav-item">
+        <a class="disabled menu-link" href="#">Visa Everywhere</a>
+      </li>
+    </ul>
+  </div>
+  
+</nav>
+<div class="menu-status-bar">
+<div id="marker" class="marker" [ngStyle]="{'left':position}"></div>
+</div>
+    
+
+</div>

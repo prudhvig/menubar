@@ -1,0 +1,110 @@
+/* Styles go here */
+
+#services-carousel,
+#services {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+ul {
+  overflow: hidden;
+  padding: 0;
+}
+
+li {
+  float: left;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+  font-size: 18px;
+  /*padding-left: 2rem;*/
+  /*padding-right: 2rem;*/
+}
+
+.marker {
+  display: none;
+  top: -13px;
+  background: transparent url("https://usa.visa.com/content/dam/VCOM/nav-assets/global-nav-indicator.png") no-repeat scroll 50% 50%;
+  height: 16px;
+  /*left: 4%;*/
+  position: absolute;
+  z-index: 1;
+  width: 45px;
+  transition: .4s left ease-in;
+}
+
+.display-block {
+  display: block;
+}
+
+li {
+  cursor: pointer;
+}
+
+.menu-status-bar {
+  position: relative;
+  display: block;
+  border: 0;
+  background: #f8b208;
+  width: auto;
+  height: 6px;
+}
+
+.menu-nav-bar {
+  background: linear-gradient(45deg, #1a1e5a 0, #122d98 100%);
+}
+
+.menu-name {
+  font-size: 1.7rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.menu-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.search-icon {
+  content: "\e827";
+}
+
+.navbar-toggle-icon {
+  position: relative;
+  width: 22px;
+  height: 14px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.icon-bar {
+  background-color: #fff;
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-top: 4px;
+  border-radius: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+  .company-icon {
+    height: 15px;
+  }
+  /*    .navbar-collapse {*/
+  /*    background: #fff;*/
+  /*    margin-top: .5rem;*/
+  /*    position: absolute;*/
+  /*    width: 100%;*/
+  /*    z-index: 20010;*/
+  /*}*/
+}
